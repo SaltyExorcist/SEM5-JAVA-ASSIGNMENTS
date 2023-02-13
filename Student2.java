@@ -24,6 +24,6 @@ public class Student2 extends Person {
 
     // Method to return Person-Student details as a string
     public String toString() {
-        return super.toString() + ",Program=" + program + ",Year=" + year + ",Fees=" + fees;
+        return super.toString() + ",[Program=" + program + ",Year=" + year + ",Fees=" + fees+"]";
     }
 }

@@ -20,7 +20,7 @@ public class Student {
     public static void main(String args[])
     {
         Student std1 = new Student(7,"Raj Neogi");
-        Student std2 = new Student(7,"Raj Neogi");
+        Student std2 = new Student(5,"Raj Dey");
         boolean b=std1.isEqual(std2);
         if(b)
             System.out.println("Both are equal");

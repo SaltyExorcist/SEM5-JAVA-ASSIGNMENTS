@@ -1,4 +1,5 @@
-import java.util.Arrays;
+import java.util.Scanner;
+
 public class ExceptionHandler {
     public static void main(String[] args) {
         int[] array = new int[10];
@@ -15,6 +16,25 @@ public class ExceptionHandler {
         } catch (ArithmeticException e) {
             System.err.println("Error: arithmetic exception");
             System.err.println("Cause: " + e.getMessage());
+        }
+    }
+
+    public static class BuzzNumber
+    {
+        public static void main(String[] args)
+        {
+            int n;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter n=");
+            n = sc.nextInt();
+            if (n % 10 == 7 || n % 7 == 0)
+            {
+                System.out.println("Buzz number");
+            }
+            else
+            {
+                System.out.println("Not Buzz number");
+            }
         }
     }
 }

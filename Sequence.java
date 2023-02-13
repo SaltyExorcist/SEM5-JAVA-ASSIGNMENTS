@@ -4,16 +4,18 @@ public class Sequence
     static int i,j;
     public static int sequenceCount(int arr[],int n)
     {
-        int count=0;
+        int count=0,k=0;
+        int result[]=new int[n];
        Arrays.sort(arr);
        for(i=1;i<n;i++)
        {
-         if(arr[i]-arr[i-1]==1)
+         if(arr[i]-arr[i-1]==1) {
              count++;
+         }
          else
              continue;
        }
-       return count;
+       return count+1;
     }
     public static void main(String args[])
     {

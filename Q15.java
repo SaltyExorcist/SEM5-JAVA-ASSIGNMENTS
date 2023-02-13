@@ -20,7 +20,7 @@ public class Q15
         for (int i = 0; i < l1; i++) {
             ch1 = str1.charAt(i);
             ch2 = str2.charAt(i);
-            int x=str1.compareTo(str2);
+            int x=(int)(ch1-ch2);
             if(x>0)
             {
                 flag=1;

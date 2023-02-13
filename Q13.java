@@ -19,7 +19,7 @@ public class Q13 {
         for (int i = 0; i < j; i++) {
             arr[i] = temp[i];
         }
-        System.out.print("Array after deleting duplicates::");
+        System.out.print("Array after deleting duplicates:");
         for (int i = 0; i < j; i++)
             System.out.print(arr[i] + " ");
         return j;

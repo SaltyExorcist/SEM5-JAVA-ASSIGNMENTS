@@ -21,6 +21,6 @@ public class Staff extends Person {
 
     // Method to return Person-Staff details as a string
     public String toString() {
-        return super.toString() + ",School=" + school + ",Pay=" + pay;
+        return super.toString() + ",[School=" + school + ",Pay=" + pay+"]";
     }
 }

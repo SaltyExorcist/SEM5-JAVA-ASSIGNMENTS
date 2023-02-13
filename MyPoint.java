@@ -37,31 +37,25 @@ public class MyPoint //Assignment 4
      double Distance(MyPoint obj)
      {
          double h,d;
-         h=Math.pow((this.x-obj.x),2)+Math.pow((this.x-obj.x),2);
+         h=Math.pow((this.x-obj.x),2)+Math.pow((this.y-obj.y),2);
          d=Math.sqrt(h);
          return d;
      }
 
-     public static void main(String args[])
-     {
-         MyPoint obj1=new MyPoint();
-         Scanner sc=new Scanner(System.in);
-         MyPoint obj2=new MyPoint();
-         int a,b;
-         System.out.println("Enter the coordinates:");
-         a=sc.nextInt();
-         b=sc.nextInt();
-         obj1=new MyPoint(a,b);
-         obj2.setXY();
-         int arr1[]= obj1.getXY();
-         int arr2[]= obj2.getXY();
-         System.out.println("Coordinates of the 1st point:");
-         String p1=obj1.conString();
-         System.out.println(" "+p1);
-         System.out.println("Coordinates of the 2nd point:");
-         String p2=obj2.conString();
-         System.out.println(" "+p2);
-         double d1= obj1.Distance(obj2);
-         System.out.println("Distance between the 1st and 2nd point:"+d1);
-     }
+
 }
+/*
+Output:
+Enter the coordinates:
+2
+3
+Enter the coordinates:
+7
+9
+Coordinates of the 1st point:
+ (2,3)
+Coordinates of the 2nd point:
+ (7,9)
+Distance between the 1st and 2nd point:7.0710678118654755
+
+ */
